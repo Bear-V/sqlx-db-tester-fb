@@ -1,0 +1,19 @@
+[package]
+name = "sqlx-db-tester-fb"
+version = "0.1.0"
+authors = ["Fly Bear<zhuzhaoxio@gmail.com>"]
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/sqlx-db-tester-fb"
+repository = "https://github.com/Bear-V/sqlx-db-tester-fb"
+homepage = "https://github.com/Bear-V/sqlx-db-tester-fb"
+description = "Self use , A simple tool to test sqlx with postgres. It will automatically create a database and drop it after the test."
+
+readme = "README.md"
+categories = ["development-tools"]
+keywords = ["sqlx", "postgres", "test", "fb"]
+
+[dependencies]
+sqlx = { version = "0.6.3", features = ["runtime-tokio-rustls", "postgres", "chrono"] }
+tokio = { version = "1.28.0", features = ["full"] }
+uuid = { version = "1.3.2", features = ["v4"] }
